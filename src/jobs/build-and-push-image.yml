@@ -108,6 +108,7 @@ steps:
       steps:
         - setup_remote_docker:
             docker_layer_caching: <<parameters.use-docker-layer-caching>>
+            version: 19.03.13
 
   - gcr-auth:
       google-project-id: <<parameters.google-project-id>>
